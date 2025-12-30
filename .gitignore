@@ -1,0 +1,19 @@
+mlops-zero-to-hero
+ve/
+./ven
+.ven
+venv/
+
+#python 
+__pycache__/
+*.__pycache__
+
+# logs and artifacts
+logs/
+artifacts/
+models/
+mlruns/
+
+#os
+
+.DS_Store
