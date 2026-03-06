@@ -1,0 +1,47 @@
+Flask
+    Flask is a lightweight and flexible web framework for Python. It is designed to make it easy to build web applications quickly and with minimal boilerplate code. Flask is often referred to as a "microframework" because it does not include built-in tools for things like database handling or form validation, allowing developers to choose their own tools and libraries as needed.
+
+Key features of Flask:
+
+Lightweight and modular: Flask is simple and allows you to add extensions as needed.
+Built-in development server: Includes a debugger and reloader for development.
+Jinja2 templating: Supports dynamic HTML rendering.
+WSGI support: Flask applications are WSGI-compliant, making them compatible with WSGI servers.
+RESTful request handling: Makes it easy to build APIs.
+
+Workflow of Flask Application:
+
+1. **Client Request**:
+   - A client (e.g., browser, mobile app) sends an HTTP request to the server.
+
+2. **WSGI Server**:
+   - The WSGI server (e.g., Gunicorn, uWSGI) receives the HTTP request.
+   - It translates the HTTP request into a WSGI-compliant format and forwards it to the Flask application.
+
+3. **Flask Application**:
+   - The Flask app processes the request.
+   - It matches the request to a route and executes the corresponding view function.
+
+4. **Response Generation**:
+   - The view function generates a response (e.g., HTML, JSON, or other content).
+   - Flask sends the response back to the WSGI server.
+
+5. **Response to Client**:
+   - The WSGI server converts the response into HTTP format.
+   - It sends the HTTP response back to the client.
+
+This workflow ensures that the Flask application is WSGI-compliant and can work with any WSGI server.
+
+Jinja Template:
+    Jinja is a templating engine for Python, used by Flask to dynamically generate HTML pages. 
+    It allows embedding Python-like expressions and logic directly into HTML files.
+
+Key features of Jinja:
+1. **Variables**: Use `{{ variable_name }}` to display dynamic content.
+2. **Control Structures**: Use `{% ... %}` for loops, conditionals, and other logic.
+3. **Filters**: Modify variables using filters like `{{ variable|filter_name }}`.
+4. **Template Inheritance**: Create base templates and extend them for consistent layouts.
+
+Example:
+
+
